@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            width: 100%;
+            height: 50vh;
+            gap: 5px;
+            border: 2px solid;
+            grid-template-areas:
+            'header header header header header header'
+            'a a a a a a'
+            'cont cont body body body cont1 '
+            'cont cont body body body cont1 '
+            'footer footer footer footer footer footer';
+            
+            }
+
+        .container > div{
+              
+              font-size: larger;
+              font-weight: bolder;
+              text-align: center;
+              
+        }
+
+        .header{
+            border: 2px solid;
+            grid-area: header;
+        }
+        .a{
+            grid-area: a;
+            border: 2px solid;
+        }
+        .cont{
+            border: 2px solid;
+            grid-area: cont;
+        }
+        .body{
+            grid-area: body;
+            border: 2px solid;
+        }
+        .cont1{
+            grid-area: cont1;
+            border: 2px solid;
+        }
+        .footer{
+            grid-area: footer;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+   <div class="header">Header</div>
+   <div class="a">Navigation Menu</div>
+   <div class="cont">Content</div>
+   <div class="body">Body</div>
+   <div class="cont1">Content</div>
+   <div class="footer">Footer</div>
+</div>
+   </body>
+</html>
